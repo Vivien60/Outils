@@ -1,5 +1,7 @@
 Analyseur statique de code
 
+https://phpstan.org/user-guide/getting-started
+
 ## Installation
 
 ```bash
@@ -30,11 +32,11 @@ Here's a brief overview of what's checked on each level. Levels are cumulative -
 
 ## Configuration
 
-Certains symbloes (alias, etc) ont besoin d'être ajoutés. *Ca me semble assez lourd, mais le LLM pourrait m'aider peut-être. Cependant, questionb maintenabilité, bof. Ca pourrait être un no-go*
+Certains symboles (alias, etc) ont besoin d'être ajoutés. *Ca me semble assez lourd, mais le LLM pourrait m'aider peut-être. Cependant, question maintenabilité, bof. Ca pourrait être un no-go*
 
-Doc pour config
+[Doc pour config](https://phpstan.org/user-guide/discovering-symbols)
 
-When using a config file, you have to pass the `--level|-l` option to `analyse` command (default value `0` does not apply here), or provide it as a `level` parameter in the config file itself. Learn more about other command line options »
+When using a config file, you have to pass the `--level|-l` option to `analyse` command (default value `0` does not apply here), or provide it as a `level` parameter in the config file itself. [Learn more about other command line options](https://phpstan.org/user-guide/command-line-usage) »
 
 If you do not provide a config file explicitly, PHPStan will look for files named `phpstan.neon`, `phpstan.neon.dist`, or `phpstan.dist.neon` in the current directory.
 
@@ -78,3 +80,5 @@ parameters:
     bootstrapFiles:
         - classAliases.php
 ```
+
+Content from [https://phpstan.org](https://phpstan.org). Visit [https://phpstan.org/user-guide](https://phpstan.org/user-guide). Copyright 2025 by PHPStan s.r.o.
